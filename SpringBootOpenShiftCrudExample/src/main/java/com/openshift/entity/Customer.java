@@ -3,29 +3,28 @@
  */
 package com.openshift.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
-
 /**
  * @author avadheshkumar
  *
  */
-@Entity
-@Table(name = "CUSTOMER")
+/*
+ * @Entity
+ * 
+ * @Table(name = "CUSTOMER")
+ */
 public class Customer {
-	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cust_gen")
-	@SequenceGenerator(name = "cust_gen", sequenceName = "cust_seq")
+	/*
+	 * @Id
+	 * 
+	 * @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cust_gen")
+	 * 
+	 * @SequenceGenerator(name = "cust_gen", sequenceName = "cust_seq")
+	 */
 	private Long customerId;
 
-	@Column(name = "CUSTOMER_NAME")
+	/* @Column(name = "CUSTOMER_NAME") */
 	private String customerName;
-	@Column(name = "EMAIL")
+	/* @Column(name = "EMAIL") */
 	private String email;
 
 	public Customer() {
